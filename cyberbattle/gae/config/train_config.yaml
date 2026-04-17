@@ -17,7 +17,7 @@ batch_size: 32
 edge_feature_aggregations: # aggregation functions for the edge feature vectors if multiple are present
   - 'mean'
 
-train_iterations: 1000
+train_iterations: 5000
 val_iterations: 300
 proportional_cutoff_coefficient: 10
 episode_iterations: 100

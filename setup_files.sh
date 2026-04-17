@@ -107,7 +107,7 @@ ZIP_FILE_3_OUTPUT="$SCRIPT_DIR/cyberbattle/data/env_samples/graphs.zip"
 ZIP_FILE_3_EXTRACT_DIR="$SCRIPT_DIR/cyberbattle/data/env_samples"
 
 if prompt_download_zip "$ZIP_FILE_3_URL" "$ZIP_FILE_3_OUTPUT" "$ZIP_FILE_3_EXTRACT_DIR" "default scenarios"; then
-    sed -i 's|default_environments_path:.*|default_environments_path: "syntethic_deployment_20_graphs_100_nodes"|' "$TMP_FILE"
+    sed -i 's|default_environments_path:.*|default_environments_path: "graphs_sample_2026-04-17_11-04-02"|' "$TMP_FILE"
 fi
 
 # Move the updated tmp file back to the original YAML file

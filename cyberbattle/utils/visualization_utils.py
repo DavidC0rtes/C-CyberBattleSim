@@ -25,10 +25,9 @@ def create_interactive_agent_visualization(model, env, num_episodes=5):
             G = env.envs[0].current_env.evolving_visible_graph
 
             info = info[0]
-            valid = not isinstance(info['real_outcome_class'], attacker_model.InvalidAction)
+            valid = not isinstance(info['outcome_class'], attacker_model.InvalidAction)
             src, tgt, vuln_id, outcome = info['source_node'], info['target_node'], info['vulnerability'], info['outcome']
             exploited_records.append((src, tgt, vuln_id, outcome, valid))
-            print("Exploited records:", exploited_records)
             trajectory.append({
                 "graph": G.copy(),
                 "owned_nodes": copy.deepcopy(env.envs[0].current_env.owned_nodes),
