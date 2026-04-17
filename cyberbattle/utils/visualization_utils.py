@@ -246,5 +246,3 @@ def create_interactive_agent_visualization(model, env, num_episodes=5):
         return fig, stats_panel
 
     app.run(debug=True)
-
-
