@@ -1,0 +1,17 @@
+{
+    "name": "ccyberbattlesim dev container",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "anthropic.claude-code"
+            ],
+            "settings": {
+                "remote.autoForwardPorts": false
+            }
+        }
+    },
+    "build": {
+        "dockerfile": "../Dockerfile"
+    }
+}
